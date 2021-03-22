@@ -4,6 +4,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
  a{
@@ -89,6 +90,7 @@ body{
     padding: 7px;
     font-size: 12px;
     border:none;
+    outline: none;
     background-color: #f7f8fa;
     font-weight: 500;
 }
@@ -324,7 +326,7 @@ body{
     margin-top:10px;
     width: 50%;
     padding: 12px 15px;
-    border:1px solid #ff5e15;
+  
     border-radius: 10px;
     box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
     background-color: #ff5e15;
@@ -332,18 +334,194 @@ body{
     font-size: 20px;
     font-weight: bold;
     color:#253044;
+    outline: none;
+    border:none
     
 }
 
 .mt-40{
     margin-top:40px;
 }
+.main-container{
+    width: 100%;
+    background-color: #9c9ad8;
+    
+    padding-top: 20px;
+  
+}
+
+.main-container .main-wrapper{
+    width: 95%;
+    background-color: #ffffff;
+    margin:0 auto;
+    border-radius: 10px;
+    
+}
+
+.header{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.branding {
+    font-size: 30px;
+    font-weight: 700px;
+
+}
+.btn-logout{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    border:2px solid  #ff5e15;
+    border-radius: 5px;
+    padding: 9px 40px;
+    color: #ffffff;
+    background-color: #ff5e15;
+    border: none;
+    outline:none;
+}
+
+.operator{
+    font-size: 45px;
+    width: 100px;
+    text-align: center;
+}
+.video-wrapper{
+    margin-top: 20px;
+    padding: 0px 10px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.videobox{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+}
+.videobox img{
+    height: 100%;
+    width: 100%;
+}
+.demo{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+
+}
+
+ 
+.demo img{
+    height: 100%;
+    width: 100%;
+}
+.generate{
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bottom-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    padding: 0px 10px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.upload-file{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+}
+.upload-file img{
+    width: 100%;
+    height: 100%;
+}
+.upload-face{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+}
+.upload-face img{
+    width: 100%;
+    height: 100%;
+}
+.generate-mem{
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.desc{
+    width: 100%;
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #253044;
+}
+.desc-end {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.desc-end p{
+
+    font-size: 15px;
+    color: #5d5f64;
+    text-align: center;
+    
+}
+
+.btn-generate{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+ .generate-button{
+    padding:10px 25px;
+    font-size: 20px;
+    color: #ffffff; font-weight: bold;
+    border:1px solid #780bc0;
+    border-radius:5px;
+    box-shadow: 0 10px 22px 0 rgba(156, 108, 108, 0.16);
+    background-image: linear-gradient(259deg, #0028ca , #780bc0 );
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-address{
+    display: none;
+}
+
 
 @media (max-width:600px)
 {
-    .login-container{
-        
-    }
+   
     .branding-section,
     .signup-branding-section{
         display: none;
@@ -384,7 +562,139 @@ body{
      .form-section form>input{
          height: 23px;
      }
+     .header{
+         justify-content: space-around;
+         align-items: baseline;
+     }
      
+     .branding {
+         font-size: 16px;
+     }
+     
+     .btn-logout{
+        padding: 6px 17px;
+     }
+     
+     .operator{
+         display: flex;
+         font-size: 20px;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .generate p{
+         font-size: 10px;
+         font-weight: normal;
+         overflow-wrap: break-word;
+     }
+     .desc-end{
+        padding: 12px 34px 7px 28px;
+         }
+
+
+     .desc-end p{
+        font-size: 12px;
+        font-weight: bold;
+        padding:4px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+     }
+
+
+     .email-address{
+         margin-top: 20px;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+     }
+     .email-address form>input{
+         padding: 3px;
+        
+     }
+     .email-address form>input::placeholder{
+         font-size: 12px;
+     }
+     .email-address .btn-ok{
+         font-size: 12px;
+         padding: 5.2px;
+         margin-left: -3px;
+         text-align: center;
+         color: #ff5e15;
+         background-color: #ffffff
+         box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.16);
+     }
+
+     
+     .bottom-wrapper{
+        margin-top: 50px;
+        padding: 100px 10px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+     }
+    
+     .generate-mem {
+         
+        text-align: center;
+        width: 80%;
+        padding:40px 0px;
+     }
+   
+     .desc{
+         padding-bottom: 30px;
+         font-size: 12px;
+     }
+     .bottom-div{
+         display: flex;
+         flex-direction: column;
+         align-content: space-around;
+         margin-top: 50px;
+     }
+
+    .videobox, .demo, .operator, .generate{
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .upload-file,.upload-face,.generate-mem{
+        width: 80%;
+        height: 80%;
+      
+
+    }
+    .upload-file,.upload-face,.generate-mem img{
+        width: 80%;
+    }
+    .btn-generate{
+        margin-bottom: 35px;
+    }
+   
+    .video-wrapper{
+        display: none;
+    }
+     
+    .main-wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn-generate{
+        margin-top: 20px;
+    }
+    .generate-button{
+        padding: 12px 44px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+   
+    
 }
 
 
